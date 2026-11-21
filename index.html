@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ A. NAVIGATION BAR ============ -->
+  <header class="site-header" id="home">
+    <div class="container topbar">
+
+      <!-- Hamburger button (visible on screens under 768px only) -->
+      <button class="burger" id="burger" type="button"
+              aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Navigation links: always visible on desktop, collapsible on mobile -->
+      <nav class="nav" id="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Small logo / icon (top-right) -->
+      <img class="logo" src="images/logo.png" alt="Personal logo">
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ B. SCHOOL INTRODUCTION ============ -->
+    <section class="intro container">
+      <img class="school-photo" src="images/school.jpg" alt="Polytechnic College of Botolan">
+      <div class="intro-text">
+        <p>I'm an Associate in Computer Technology student, passionate about computer hardware, troubleshooting and basic programming. Currently studying ACT in Polytechnic College of Botolan located at Batonlapoc, Botolan, Zambales, eager to learn and grow in the IT field.</p>
+        <!-- No school URL was supplied; replace "#" with the real link when you have it -->
+        <a class="btn" href="https://www.pcb.edu.ph/home/">VIEW MY SCHOOL</a>
+      </div>
+    </section>
+
+    <!-- ============ C. ABOUT ME ============ -->
+    <section class="about container" id="about">
+      <div class="about-text">
+        <h2>ABOUT ME</h2>
+        <p>I'm an Associate in Computer Technology students in Polytechnic College of Botolan. I'm graduated senior high school in Loob Bunga High School with honors and currently a 2nd year student. I have gained hands on experience in network configuration and troubleshooting.</p>
+        <!-- No destination was supplied; replace "#" with the real link when you have it -->
+        <a class="btn" href="#">Learn more</a>
+      </div>
+      <img class="profile-photo" src="images/portrait.jpg" alt="Profile portrait">
+    </section>
+
+    <!-- ============ D. ACHIEVEMENTS ============ -->
+    <section class="achievements container" id="achievements">
+      <h2>ACHIEVEMENTS</h2>
+      <div class="achievement-row">
+
+        <article class="achievement">
+          <img src="images/achievement-1.jpeg" alt="Basketball tournament">
+          <p>Played at EASTERN LEAGUE Tournament<br>Basketball Junior Division</p>
+          <p>Champion</p>
+        </article>
+
+        <article class="achievement">
+          <img src="images/achievement-2.jpg" alt="High school graduation">
+          <p>Graduate at Loob-Bunga High School with Honors</p>
+          <p>Athlete of the year<br>Best in Mathematics</p>
+        </article>
+
+        <article class="achievement">
+          <img src="images/achievement-3.jpg" alt="ICS Fest">
+          <p>Joined at ICS Fest in Polytechnic College of Botolan Crimping Challenge</p>
+          <p>Second Runner Up</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ E. CONTACT ============ -->
+    <section class="contact container" id="contact">
+
+      <div class="contact-info">
+        <h2>CONTACT</h2>
+        <p><span>Email:</span> marctraveshraquel@pcb.edu.ph</p>
+        <p><span>Facebook:</span> Marc Travesh Raquel</p>
+        <p><span>Contact No.:</span> 0956519116</p>
+      </div>
+
+      <!-- No form backend yet: connect "action" to a form service or server to receive messages -->
+      <form class="contact-form" action="#" method="post">
+        <h2>FORM</h2>
+        <div class="field">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="message">Message:</label>
+          <input type="text" id="message" name="message" required>
+        </div>
+        <button class="send" type="submit">Send</button>
+      </form>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
